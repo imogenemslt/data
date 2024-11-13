@@ -35,3 +35,8 @@ else:
     dob = input("enter patients date of birth: ")
     age = input("enter patients age: ")
     phone = input("enter patients phone number: ")
+    docId = input("enter your doctors id")
+  sql = "INSERT INTO patient (PFname, Plname,dob,age,phone,docId) VALUES (%s, %s)"
+  sql = "INSERT INTO patient (DFname, Dlname) VALUES (%s, %s)"
+   mycursor.execute(sql)
+  mydb.commit()
